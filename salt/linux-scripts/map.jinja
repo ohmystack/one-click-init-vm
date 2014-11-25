@@ -1,0 +1,6 @@
+{% set linux_scripts = salt['grains.filter_by']({
+    'Debian': {
+      'clone_to': '/home/%s/%s/linux-scripts' % (pillar['vm_user']['username'], pillar['git']['clone_to_home_dir']),
+    },
+    'RedHat': {},
+}) %}

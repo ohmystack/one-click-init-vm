@@ -1,0 +1,7 @@
+vm_user:
+  username: cloud
+git: 
+  username: junjiang
+  email: junjiang@ctrip.com
+  # If set 'clone_to_home_dir: Dev', git will clone all the repos under '/home/<user>/Dev/'
+  clone_to_home_dir: Dev
