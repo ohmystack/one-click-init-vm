@@ -54,3 +54,11 @@ ohmystack/python-vim:
       - pkg: nodejs
       - pkg: npm
       - pip: ropevim
+
+link_vimrc:
+  file.symlink:
+    - name: {{ common.user_home }}/.vimrc
+    - target: {{ common.user_home }}/.vim/vimrc
+    - force: True
+    - require:
+      - git: ohmystack/python-vim

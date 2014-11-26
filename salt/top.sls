@@ -1,5 +1,6 @@
 base:
   '*':
+    - user.nopasswd
     - git
     - git.config
     - vim

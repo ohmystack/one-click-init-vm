@@ -13,6 +13,7 @@ add_my_theme:
     - source: {{ linux_scripts.clone_to }}/zsh/themes/af-magic-custom.zsh-theme
     - force: True
     - subdir: True
+    - makedirs: True
     - require:
       - git: ohmystack/linux-scripts
       - git: robbyrussell/oh-my-zsh
@@ -25,5 +26,5 @@ link_zshrc:
     - require:
       - git: ohmystack/linux-scripts
       - git: robbyrussell/oh-my-zsh
-      - pkg: auto-jump
+      - pkg: autojump
       - file: add_my_theme

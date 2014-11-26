@@ -18,12 +18,9 @@ install_zsh:
 set_default_shell:
   cmd.run:
     - name: chsh -s `which zsh` {{ common.username }}
-    - unless: echo $SHELL | grep zsh
+    - shell: /bin/bash
     - require:
       - pkg: install_zsh
-
-wget:
-  pkg.installed
 
 robbyrussell/oh-my-zsh:
   git.latest:
