@@ -1,5 +1,8 @@
 vm_user:
   username: cloud
+  # 'userpasswd_hash' is the hash of your user's login password,
+  # use 'mkpasswd -m sha-512' to generate your hash value
+  userpasswd_hash: xxxxxx
 git: 
   username: junjiang
   email: junjiang@ctrip.com

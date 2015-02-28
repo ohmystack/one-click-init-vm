@@ -1,5 +1,6 @@
 base:
   '*':
+    - user
     - user.nopasswd
     - git
     - git.config

@@ -1,6 +1,7 @@
 {% set common = salt['grains.filter_by']({
     'Debian': {
       'username': pillar['vm_user']['username'],
+      'userpasswd_hash': pillar['vm_user']['userpasswd_hash'],
       'user_home': '/home/%s' % pillar['vm_user']['username'],
       'ssh_identity': '/home/%s/.ssh/id_rsa' % pillar['vm_user']['username'],
     },
