@@ -2,13 +2,17 @@
 
 include:
   - git
+  - git.config
   - vim
 
 python-pip:
   pkg.installed
 
 ctags:
-  pkg.installed
+  pkg.installed:
+    {% if grains['os_family'] == 'Debian' %}
+    - name: exuberant-ctags
+    {% endif %}
 
 pep8:
   pkg.installed
