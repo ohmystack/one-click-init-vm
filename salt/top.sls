@@ -14,3 +14,5 @@ base:
     - screen.config
     - wget
     - iftop
+    - supervisor
+    - supervisor.config
