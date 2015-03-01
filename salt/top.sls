@@ -4,6 +4,7 @@ base:
     - user.nopasswd
     - git
     - git.config
+    - pip
     - vim
     - vim.config
     - wget
@@ -16,3 +17,5 @@ base:
     - iftop
     - supervisor
     - supervisor.config
+    - shadowsocks
+    - shadowsocks.config

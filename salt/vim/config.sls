@@ -3,10 +3,8 @@
 include:
   - git
   - git.config
+  - pip
   - vim
-
-python-pip:
-  pkg.installed
 
 ctags:
   pkg.installed:

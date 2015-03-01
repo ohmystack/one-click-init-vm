@@ -13,7 +13,7 @@ supervisord.conf:
     - require:
       - pkg: supervisor
 
-conf.d:
+supervisor/conf.d:
   file.directory:
     - name: /etc/supervisor/conf.d
     - require:
@@ -24,5 +24,4 @@ restart_supervisord:
     - name: supervisor
     - listen:
       - ini: supervisord.conf
-      - file: conf.d
-
+      - file: supervisor/conf.d

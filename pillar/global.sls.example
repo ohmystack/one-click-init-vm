@@ -3,8 +3,16 @@ vm_user:
   # 'userpasswd_hash' is the hash of your user's login password,
   # use 'mkpasswd -m sha-512' to generate your hash value
   userpasswd_hash: xxxxxx
+
 git: 
   username: junjiang
   email: junjiang@ctrip.com
   # If set 'clone_to_home_dir: Dev', git will clone all the repos under '/home/<user>/Dev/'
   clone_to_home_dir: Dev
+
+shadowsocks:
+  port: 8080
+  password: password
+  workers: 1
+  # Be careful, optimize_sysctl will MODIFY your LINUX KERNEL params for better performance of shadowsocks
+  optimize_sysctl: False
