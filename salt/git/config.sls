@@ -14,6 +14,7 @@ github.com:
 gitignore_global:
   file.managed:
     - name: {{ common.user_home }}/.gitignore_global
+    - user: {{ common.username }}
     - source: salt://git/files/gitignore_global
 
 config_git:
