@@ -13,3 +13,4 @@ base:
     - screen
     - screen.config
     - wget
+    - iftop

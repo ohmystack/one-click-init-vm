@@ -1,0 +1,2 @@
+iftop:
+  pkg.installed
