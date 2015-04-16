@@ -2,3 +2,4 @@
 *~
 *pyc
 pillar/*.sls
+salt/top.sls
