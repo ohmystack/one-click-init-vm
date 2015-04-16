@@ -5,4 +5,4 @@ create_user:
     - name: {{ common.username }}
     - home: /home/{{ common.username }}
     - password: {{ common.userpasswd_hash }}
-    - enforce_password: False
+    - enforce_password: {{ common.enforce_password }}

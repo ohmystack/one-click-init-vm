@@ -3,6 +3,7 @@ vm_user:
   # 'userpasswd_hash' is the hash of your user's login password,
   # use 'mkpasswd -m sha-512' to generate your hash value
   userpasswd_hash: xxxxxx
+  enforce_password: False
 
 git: 
   username: junjiang
