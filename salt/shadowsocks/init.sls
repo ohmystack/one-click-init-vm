@@ -4,7 +4,7 @@ include:
 shadowsocks:
   pip.installed:
     - require:
-      - pkg: python-pip
+      - cmd: python-pip
 
 python-gevent:
   pkg.installed

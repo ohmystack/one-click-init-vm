@@ -1,2 +1,4 @@
 python-pip:
-  pkg.installed
+  cmd.script:
+    - name: https://bootstrap.pypa.io/get-pip.py
+    - unless: which pip

@@ -35,7 +35,7 @@ install_npm:
 ropevim:
   pip.installed:
     - require:
-      - pkg: python-pip
+      - cmd: python-pip
 
 ohmystack/python-vim:
   git.latest:
