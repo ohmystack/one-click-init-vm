@@ -8,11 +8,10 @@ autojump:
   pkg.installed
 
 add_my_theme:
-  file.copy:
-    - name: {{ common.user_home }}/.oh-my-zsh/themes/
-    - source: {{ linux_scripts.clone_to }}/zsh/themes/af-magic-custom.zsh-theme
+  file.symlink:
+    - name: {{ common.user_home }}/.oh-my-zsh/themes/af-magic-custom.zsh-theme
+    - target: {{ linux_scripts.clone_to }}/zsh/themes/af-magic-custom.zsh-theme
     - force: True
-    - subdir: True
     - makedirs: True
     - require:
       - git: ohmystack/linux-scripts
